@@ -5,8 +5,15 @@ To launch the Jupyter notebook server, run:
 
 ```bash
 cd <courses_dir>
+# Create the virtual environment if it does not already exist.
+python3 -m venv --name=courses
+# Activate the venv.
 source ./courses/bin/activate
-jupyter notebook
+# Create the jupyter kernel for this venv before launching notebook for the first time.
+python3 -m pip install ipykernel
+python3 -m ipykernel --user --name=courses --display-name="Python3 (courses)"
+# Launch jupyter as notebook server. 
+/opt/homebrew/bin/jupyter notebook
 ```
 
 Make sure to use the "Python3 (courses)" notebook kernel.  This will ensure that any packages installed inside a notebook for these courses will be installed in this virtual environment, rather than the system python3 root.
