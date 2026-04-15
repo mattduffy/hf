@@ -17,3 +17,5 @@ python3 -m ipykernel --user --name=courses --display-name="Python3 (courses)"
 ```
 
 Make sure to use the "Python3 (courses)" notebook kernel.  This will ensure that any packages installed inside a notebook for these courses will be installed in this virtual environment, rather than the system python3 root.
+
+[Jupyter package / kernel help](https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/) for help troubleshooting how jupyter interacts with virtual environments regarding package installation.
