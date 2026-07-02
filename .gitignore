@@ -1,3 +1,4 @@
+.DS_Store
 courses/**/site_packages
 
 # Byte-compiled / optimized / DLL files
