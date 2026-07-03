@@ -6,7 +6,8 @@ To launch the Jupyter notebook server, run:
 ```bash
 cd <courses_dir>
 # Create the virtual environment if it does not already exist.
-python3 -m venv --name=courses
+~~python3 -m venv --name=courses~~
+python3 -m venv ./
 # Activate the venv.
 source ./courses/bin/activate
 # Create the jupyter kernel for this venv before launching notebook for the first time.
